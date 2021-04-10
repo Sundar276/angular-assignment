@@ -1,0 +1,19 @@
+<app-first></app-first>
+<div class="container-fluid">
+<p>Service works!</p>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6" *ngFor="let i of person">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ i.first_name | uppercase }}</h5>
+              <p class="card-text">{{ i.last_name | lowercase }}</p>
+              <p class="card-text">{{ i.email }}</p>
+              <p class="card-text">{{ i.gender }}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</div>

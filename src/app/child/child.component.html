@@ -1,0 +1,7 @@
+<p>parent to child (app to child component)</p>
+<p>Today's item: {{item}}</p>
+
+<p>Child to parent (child to app component)</p>
+
+<label>Add an item: <input #newItem></label>
+<button (click)="addNewItem(newItem.value)">Add to parent's list</button>

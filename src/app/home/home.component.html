@@ -1,0 +1,9 @@
+<app-first></app-first>
+<div class="container-fluid">
+<p>home works!</p>
+<app-child [item]="currentItem" (newItemEvent)="addItem($event)"></app-child>
+
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+</div>
